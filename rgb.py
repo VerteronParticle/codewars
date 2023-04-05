@@ -1,4 +1,6 @@
+"""Convert RGB to six-digit Hexadecimal."""
 def rgb(r, g, b):
+    """Validate and return six-digit Hexadecimal."""""
     def valid(num):
 
         return 255 if num > 255 else (
