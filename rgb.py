@@ -9,8 +9,8 @@ def rgb(r, g, b):
 
     def valid_hex(num):
 
-        return hex(num)[2:] if num > 10 else (
-            f"0{hex(num)[2:]}" if num < 10 else "00"
+        return hex(num)[2:] if num > 16 else (
+            f"0{hex(num)[2:]}" if num < 16 else "00"
         )
     output = list(map(valid_hex, map(valid, [r, g, b])))
     return ''.join([n for n in output]).upper()
